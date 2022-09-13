@@ -4,7 +4,7 @@ For this script the module pnp.powerShell is used.
 #>
 
 $IntranetPage = Read-Host -Prompt "Please provide the url to the sharepoint site that needs to be promoted" 
-Connect-PnPOnline -Url $Tenant -Interactive -LaunchBrowser
+#YConnect-PnPOnline -Url $Tenant -Interactive -LaunchBrowser
 
 Connect-PnPOnline -Url $IntranetPage -LaunchBrowser -Interactive
 $UrlSplit = $IntranetPage -split "sites"
